@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.java.asset.test.AssetReservationTest" time="0.202" tests="5" errors="3" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="22"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\SUBHA SHRI\eclipse-workspace\AssetManagement\target\test-classes;C:\Users\SUBHA SHRI\eclipse-workspace\AssetManagement\target\classes;C:\Users\SUBHA SHRI\.m2\repository\com\mysql\mysql-connector-j\8.0.32\mysql-connector-j-8.0.32.jar;C:\Users\SUBHA SHRI\.m2\repository\com\google\protobuf\protobuf-java\3.21.9\protobuf-java-3.21.9.jar;C:\Users\SUBHA SHRI\.m2\repository\com\google\guava\guava\17.0\guava-17.0.jar;C:\Users\SUBHA SHRI\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\SUBHA SHRI\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="22"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.boot.library.path" value="C:\Users\SUBHA SHRI\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_22.0.1.v20240426-1149\jre\bin"/>
+    <property name="sun.java.command" value="C:\Users\SUBHAS~1\AppData\Local\Temp\surefire15610723598033745630\surefirebooter11476505672391352946.jar C:\Users\SUBHA SHRI\AppData\Local\Temp\surefire15610723598033745630 2025-04-11T14-45-41_025-jvmRun1 surefire468443478323524807tmp surefire_06728436483745225856tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\SUBHA SHRI\eclipse-workspace\AssetManagement\target\test-classes;C:\Users\SUBHA SHRI\eclipse-workspace\AssetManagement\target\classes;C:\Users\SUBHA SHRI\.m2\repository\com\mysql\mysql-connector-j\8.0.32\mysql-connector-j-8.0.32.jar;C:\Users\SUBHA SHRI\.m2\repository\com\google\protobuf\protobuf-java\3.21.9\protobuf-java-3.21.9.jar;C:\Users\SUBHA SHRI\.m2\repository\com\google\guava\guava\17.0\guava-17.0.jar;C:\Users\SUBHA SHRI\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\SUBHA SHRI\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\SUBHA SHRI"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-04-16"/>
+    <property name="java.home" value="C:\Users\SUBHA SHRI\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_22.0.1.v20240426-1149\jre"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\SUBHA SHRI\eclipse-workspace\AssetManagement"/>
+    <property name="style.color" value="always"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\SUBHAS~1\AppData\Local\Temp\surefire15610723598033745630\surefirebooter11476505672391352946.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="22.0.1+8"/>
+    <property name="user.name" value="SUBHA SHRI"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Temurin-22.0.1+8"/>
+    <property name="localRepository" value="C:\Users\SUBHA SHRI\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="java.io.tmpdir" value="C:\Users\SUBHAS~1\AppData\Local\Temp\"/>
+    <property name="java.version" value="22.0.1"/>
+    <property name="user.dir" value="C:\Users\SUBHA SHRI\eclipse-workspace\AssetManagement"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Users\SUBHA SHRI\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_22.0.1.v20240426-1149\jre\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:/Users/SUBHA SHRI/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_22.0.1.v20240426-1149/jre/bin/server;C:/Users/SUBHA SHRI/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_22.0.1.v20240426-1149/jre/bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Users\SUBHA SHRI\AppData\Local\Programs\Python\Python313\Scripts\;C:\Users\SUBHA SHRI\AppData\Local\Programs\Python\Python313\;C:\Users\SUBHA SHRI\Downloads;C:\Users\SUBHA SHRI\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\SUBHA SHRI\.dotnet\tools;C:\Users\SUBHA SHRI\AppData\Roaming\npm;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2024.3.2\bin;;C:\Users\SUBHA SHRI\Downloads\apache-maven-3.9.9-bin\apache-maven-3.9.9;;C:\windows\System32;;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vm.version" value="22.0.1+8"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="66.0"/>
+  </properties>
+  <testcase name="testReserveAssetSuccessfully" classname="com.java.asset.test.AssetReservationTest" time="0.024">
+    <error message="Asset not found with ID: 0" type="com.java.asset.MyExceptions.AssetNotFoundException">com.java.asset.MyExceptions.AssetNotFoundException: Asset not found with ID: 0
+	at com.java.asset.test.AssetReservationTest.testReserveAssetSuccessfully(AssetReservationTest.java:93)
+</error>
+    <system-out><![CDATA[Database Connected Successfully
+Database Connected Successfully
+Database Connected Successfully
+]]></system-out>
+    <system-err><![CDATA[java.sql.SQLException: Data truncated for column 'status' at row 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1061)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1009)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1320)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:994)
+	at com.java.asset.dao.AssetManagementServiceImpl.addAsset(AssetManagementServiceImpl.java:32)
+	at com.java.asset.test.AssetReservationTest.setUpBeforeClass(AssetReservationTest.java:42)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:24)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]></system-err>
+  </testcase>
+  <testcase name="testWithdrawNonExistentReservation" classname="com.java.asset.test.AssetReservationTest" time="0.015"/>
+  <testcase name="testReserveAssetWithInvalidAssetId" classname="com.java.asset.test.AssetReservationTest" time="0.019"/>
+  <testcase name="testGetAssetReservations" classname="com.java.asset.test.AssetReservationTest" time="0.021">
+    <error message="Asset not found with ID: 0" type="com.java.asset.MyExceptions.AssetNotFoundException">com.java.asset.MyExceptions.AssetNotFoundException: Asset not found with ID: 0
+	at com.java.asset.test.AssetReservationTest.testGetAssetReservations(AssetReservationTest.java:170)
+</error>
+    <system-out><![CDATA[Database Connected Successfully
+]]></system-out>
+  </testcase>
+  <testcase name="testWithdrawReservationSuccessfully" classname="com.java.asset.test.AssetReservationTest" time="0.022">
+    <error message="Asset not found with ID: 0" type="com.java.asset.MyExceptions.AssetNotFoundException">com.java.asset.MyExceptions.AssetNotFoundException: Asset not found with ID: 0
+	at com.java.asset.test.AssetReservationTest.testWithdrawReservationSuccessfully(AssetReservationTest.java:127)
+</error>
+    <system-out><![CDATA[Database Connected Successfully
+]]></system-out>
+  </testcase>
+</testsuite>

@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: com.java.asset.test.AssetReservationTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 0.202 s <<< FAILURE! - in com.java.asset.test.AssetReservationTest
+testReserveAssetSuccessfully(com.java.asset.test.AssetReservationTest)  Time elapsed: 0.024 s  <<< ERROR!
+com.java.asset.MyExceptions.AssetNotFoundException: Asset not found with ID: 0
+	at com.java.asset.test.AssetReservationTest.testReserveAssetSuccessfully(AssetReservationTest.java:93)
+
+testGetAssetReservations(com.java.asset.test.AssetReservationTest)  Time elapsed: 0.021 s  <<< ERROR!
+com.java.asset.MyExceptions.AssetNotFoundException: Asset not found with ID: 0
+	at com.java.asset.test.AssetReservationTest.testGetAssetReservations(AssetReservationTest.java:170)
+
+testWithdrawReservationSuccessfully(com.java.asset.test.AssetReservationTest)  Time elapsed: 0.022 s  <<< ERROR!
+com.java.asset.MyExceptions.AssetNotFoundException: Asset not found with ID: 0
+	at com.java.asset.test.AssetReservationTest.testWithdrawReservationSuccessfully(AssetReservationTest.java:127)
+
