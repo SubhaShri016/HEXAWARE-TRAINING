@@ -2,8 +2,8 @@ package com.java.asset.model;
 
 public class Reservation {
     private int reservationId;
-    private int assetId; // Foreign Key to assets table
-    private int employeeId; // Foreign Key to employees table
+    private int assetId; 
+    private int employeeId; 
     private String reservationDate;
     private String startDate;
     private String endDate;
