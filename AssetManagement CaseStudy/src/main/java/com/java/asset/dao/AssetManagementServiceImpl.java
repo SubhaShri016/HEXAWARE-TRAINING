@@ -94,7 +94,7 @@ public class AssetManagementServiceImpl implements AssetManagementService {
 
         } catch (SQLException e) {
             e.printStackTrace();
-            return null; // Or handle exception appropriately
+            return null; 
         }
     }
 
@@ -195,13 +195,13 @@ public class AssetManagementServiceImpl implements AssetManagementService {
             pstmt.setInt(1, assetId);
             pstmt.setInt(2, employeeId);
             pstmt.setString(3, reservationDate);
-            pstmt.setString(4, startDate); // startDate parameter
-            System.out.println("DEBUG reserveAsset: Inserting startDate: " + startDate); // Debug Log - before insert
+            pstmt.setString(4, startDate); 
+            System.out.println("DEBUG reserveAsset: Inserting startDate: " + startDate); 
             pstmt.setString(5, endDate);
-            pstmt.setString(6, "pending"); // Default status for new reservation
+            pstmt.setString(6, "pending"); 
 
             int rows = pstmt.executeUpdate();
-            System.out.println("DEBUG reserveAsset: executeUpdate() returned rows: " + rows); // Debug Log - after executeUpdate
+            System.out.println("DEBUG reserveAsset: executeUpdate() returned rows: " + rows); 
             return rows > 0;
 
         } catch (SQLException e) {
@@ -211,7 +211,7 @@ public class AssetManagementServiceImpl implements AssetManagementService {
     }
 
     @Override
-    public boolean withdrawReservation(int reservationId) throws AssetNotFoundException { //Corrected exception type - reservationId is used
+    public boolean withdrawReservation(int reservationId) throws AssetNotFoundException { 
         String query = "DELETE FROM reservations WHERE reservation_id = ?";
         try (Connection conn = DBConnection.getConnection();
              PreparedStatement pstmt = conn.prepareStatement(query)) {
@@ -267,7 +267,7 @@ public class AssetManagementServiceImpl implements AssetManagementService {
      @Override
     public List<Asset> getAssetsAvailableForAllocation() {
         List<Asset> assets = new ArrayList<>();
-        String query = "SELECT * FROM assets WHERE status = 'available'"; // Assuming 'available' is a status
+        String query = "SELECT * FROM assets WHERE status = 'available'"; 
         try (Connection conn = DBConnection.getConnection();
              Statement stmt = conn.createStatement();
              ResultSet rs = stmt.executeQuery(query)) {
