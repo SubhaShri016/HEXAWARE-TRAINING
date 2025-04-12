@@ -8,8 +8,7 @@ public class Asset {
     private String purchaseDate;
     private String location;
     private String status;
-    private int ownerId; // Foreign Key to employees table
-
+    private int ownerId; 
     public Asset() {
     }
 
@@ -24,7 +23,7 @@ public class Asset {
         this.ownerId = ownerId;
     }
 
-    // Getters and Setters
+   
     public int getAssetId() {
         return assetId;
     }
