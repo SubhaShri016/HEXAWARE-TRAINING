@@ -10,7 +10,7 @@ public class UpdateAssetHandler {
     public static void handle(Scanner scanner, AssetManagementService service) {
         System.out.print("Enter Asset ID to update: ");
         int assetId = scanner.nextInt();
-        scanner.nextLine(); // consume newline
+        scanner.nextLine(); 
 
         try {
             Asset existingAsset = service.getAssetById(assetId);
