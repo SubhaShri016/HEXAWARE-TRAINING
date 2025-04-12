@@ -16,8 +16,7 @@ public class PerformMaintenanceHandler {
         String description = scanner.nextLine();
         System.out.print("Enter Maintenance Cost: ");
         double cost = scanner.nextDouble();
-        scanner.nextLine(); // consume newline
-
+        scanner.nextLine(); 
         try {
             if (service.performMaintenance(assetId, maintenanceDate, description, cost)) {
                 System.out.println("Maintenance record added successfully.");
