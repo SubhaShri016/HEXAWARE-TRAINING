@@ -23,8 +23,8 @@ public class AssetCreationTest {
     @Test
     public void testAddAssetSuccessfully() {
         String uniqueSerialNumber = "JUNIT-SERIAL-" + UUID.randomUUID().toString(); 
-        Asset newAsset = new Asset(0, "Test Asset", "Laptop", uniqueSerialNumber, "2024-01-01", "Test Location", "in use", 1); // Use unique serial
-        System.out.println("DEBUG testAddAssetSuccessfully: Before assetService.addAsset(newAsset) with serial: " + uniqueSerialNumber); // Debug log with serial
+        Asset newAsset = new Asset(0, "Test Asset", "Laptop", uniqueSerialNumber, "2024-01-01", "Test Location", "in use", 1); 
+        System.out.println("DEBUG testAddAssetSuccessfully: Before assetService.addAsset(newAsset) with serial: " + uniqueSerialNumber); 
         boolean added = assetService.addAsset(newAsset);
         System.out.println("DEBUG testAddAssetSuccessfully: assetService.addAsset(newAsset) returned: " + added); 
         assertTrue("Asset should be added successfully", added);
@@ -36,7 +36,7 @@ public class AssetCreationTest {
             assertNotNull("Retrieved asset should not be null", retrievedAsset);
             assertEquals("Retrieved asset name should match", "Test Asset", retrievedAsset.getName());
             assertEquals("Retrieved asset status should match", "in use", retrievedAsset.getStatus());
-            assertEquals("Retrieved asset serial number should match", uniqueSerialNumber, retrievedAsset.getSerialNumber()); // Verify unique serial
+            assertEquals("Retrieved asset serial number should match", uniqueSerialNumber, retrievedAsset.getSerialNumber()); 
         } catch (AssetNotFoundException e) {
             fail("AssetNotFoundException should not be thrown after adding asset: " + e.getMessage());
         }
