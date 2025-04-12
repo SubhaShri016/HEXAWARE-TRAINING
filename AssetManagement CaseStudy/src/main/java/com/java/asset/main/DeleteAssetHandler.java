@@ -8,7 +8,7 @@ public class DeleteAssetHandler {
     public static void handle(Scanner scanner, AssetManagementService service) {
         System.out.print("Enter Asset ID to delete: ");
         int assetId = scanner.nextInt();
-        scanner.nextLine(); // consume newline
+        scanner.nextLine(); 
 
         if (service.deleteAsset(assetId)) {
             System.out.println("Asset deleted successfully.");
