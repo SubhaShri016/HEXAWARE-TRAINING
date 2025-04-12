@@ -19,7 +19,7 @@ public class MainModule {
             System.out.println("5. Deallocate Asset");
             System.out.println("6. Perform Maintenance");
             System.out.println("7. Reserve Asset");
-            System.out.println("0. Exit");
+            System.out.println("8. Exit");
             System.out.print("Enter your choice: ");
 
             int choice = scanner.nextInt();
