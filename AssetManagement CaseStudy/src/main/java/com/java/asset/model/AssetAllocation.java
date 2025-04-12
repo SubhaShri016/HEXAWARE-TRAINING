@@ -2,8 +2,8 @@ package com.java.asset.model;
 
 public class AssetAllocation {
     private int allocationId;
-    private int assetId; // Foreign Key to assets table
-    private int employeeId; // Foreign Key to employees table
+    private int assetId; 
+    private int employeeId; 
     private String allocationDate;
     private String returnDate;
 
