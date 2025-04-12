@@ -23,18 +23,18 @@ public class AssetMaintenanceTest {
 
     @Test
     public void testPerformMaintenanceSuccessfully() throws AssetNotFoundException, AssetNotMaintainException {
-        // First, create an asset in a state suitable for maintenance (e.g., 'in use')
-        String uniqueSerialNumber = "JUNIT-SERIAL-" + UUID.randomUUID().toString(); // Generate unique serial number
-        Asset assetForMaintenance = new Asset(0, "Maintenance Test Asset", "Monitor", uniqueSerialNumber, "2024-01-01", "Test Location", "in use", 1); // Use unique serial number
+       
+        String uniqueSerialNumber = "JUNIT-SERIAL-" + UUID.randomUUID().toString();
+        Asset assetForMaintenance = new Asset(0, "Maintenance Test Asset", "Monitor", uniqueSerialNumber, "2024-01-01", "Test Location", "in use", 1); 
         assetService.addAsset(assetForMaintenance);
-        Asset retrievedAsset = findAssetBySerialNumber(uniqueSerialNumber); // Retrieve using helper with unique serial
+        Asset retrievedAsset = findAssetBySerialNumber(uniqueSerialNumber); 
         assertNotNull("Retrieved asset should not be null", retrievedAsset);
         Asset retrievedAssetBeforeMaintenance;
         try {
             retrievedAssetBeforeMaintenance = assetService.getAssetById(retrievedAsset.getAssetId());
         } catch (AssetNotFoundException e) {
             fail("AssetNotFoundException: Asset for maintenance not found after adding: " + e.getMessage());
-            return; // Exit test if asset not found
+            return; 
         }
         assertEquals("Initial status should be 'in use'", "in use", retrievedAssetBeforeMaintenance.getStatus());
 
@@ -42,7 +42,7 @@ public class AssetMaintenanceTest {
         assertTrue("Maintenance should be performed successfully", maintenancePerformed);
     }
 
-    // Helper method to find Asset by Serial Number (for use with original Impl)
+    
     private Asset findAssetBySerialNumber(String serialNumber) throws AssetNotFoundException {
         List<Asset> allAssets = assetService.getAllAssets();
         for (Asset asset : allAssets) {
