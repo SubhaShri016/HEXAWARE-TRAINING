@@ -2,7 +2,7 @@ package com.java.asset.model;
 
 public class MaintenanceRecord {
     private int maintenanceId;
-    private int assetId; // Foreign Key to assets table
+    private int assetId; 
     private String maintenanceDate;
     private String description;
     private double cost;
@@ -18,7 +18,7 @@ public class MaintenanceRecord {
         this.cost = cost;
     }
 
-    // Getters and Setters
+ 
     public int getMaintenanceId() {
         return maintenanceId;
     }
